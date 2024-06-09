@@ -1,0 +1,538 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4B417E22D13C625C37878C62 /* Pods_RecipeSear.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD662AB311765E4DEA9680B8 /* Pods_RecipeSear.framework */; };
+		AE2D67EA2C0D912300BD7CE4 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2D67E92C0D912300BD7CE4 /* Recipe.swift */; };
+		AE2D67ED2C0D920500BD7CE4 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2D67EC2C0D920500BD7CE4 /* NetworkManager.swift */; };
+		AE6AFD232C158E2300234BEA /* FoodTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6AFD222C158E2300234BEA /* FoodTableViewHeader.swift */; };
+		AE75C2622C09C8B2008E5B29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE75C2612C09C8B2008E5B29 /* AppDelegate.swift */; };
+		AE75C2642C09C8B2008E5B29 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE75C2632C09C8B2008E5B29 /* SceneDelegate.swift */; };
+		AE75C2662C09C8B2008E5B29 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE75C2652C09C8B2008E5B29 /* ViewController.swift */; };
+		AE75C2692C09C8B2008E5B29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE75C2672C09C8B2008E5B29 /* Main.storyboard */; };
+		AE75C26C2C09C8B2008E5B29 /* RecipeSear.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AE75C26A2C09C8B2008E5B29 /* RecipeSear.xcdatamodeld */; };
+		AE75C26E2C09C8B3008E5B29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE75C26D2C09C8B3008E5B29 /* Assets.xcassets */; };
+		AE75C2712C09C8B3008E5B29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE75C26F2C09C8B3008E5B29 /* LaunchScreen.storyboard */; };
+		AE75C27C2C09C9E6008E5B29 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE75C27B2C09C9E6008E5B29 /* SecondViewController.swift */; };
+		AE75C2822C0AE816008E5B29 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE75C2812C0AE816008E5B29 /* MyTableViewCell.swift */; };
+		AE75C2842C0AFA8C008E5B29 /* MyPickCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE75C2832C0AFA8C008E5B29 /* MyPickCell.swift */; };
+		AE75C2862C0AFC18008E5B29 /* RecentlyPickCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE75C2852C0AFC18008E5B29 /* RecentlyPickCell.swift */; };
+		AE75C28A2C0B0FFF008E5B29 /* MyPickCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE75C2892C0B0FFF008E5B29 /* MyPickCollectionCell.swift */; };
+		AE75C28C2C0B3763008E5B29 /* SearchBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE75C28B2C0B3763008E5B29 /* SearchBarViewController.swift */; };
+		AE75C28E2C0C4148008E5B29 /* SearchRecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE75C28D2C0C4148008E5B29 /* SearchRecipeCell.swift */; };
+		AEFA08F32C0EE0E400E0C87D /* FoodInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFA08F22C0EE0E400E0C87D /* FoodInfoViewController.swift */; };
+		AEFA08F92C0F038B00E0C87D /* FoodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFA08F82C0F038B00E0C87D /* FoodTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		02F4775DBC412B3B9E2DDCCE /* Pods-RecipeSear.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecipeSear.debug.xcconfig"; path = "Target Support Files/Pods-RecipeSear/Pods-RecipeSear.debug.xcconfig"; sourceTree = "<group>"; };
+		53D4E654C69A60EBAD57B420 /* Pods-RecipeSear.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecipeSear.release.xcconfig"; path = "Target Support Files/Pods-RecipeSear/Pods-RecipeSear.release.xcconfig"; sourceTree = "<group>"; };
+		AE2D67E92C0D912300BD7CE4 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		AE2D67EC2C0D920500BD7CE4 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		AE6AFD222C158E2300234BEA /* FoodTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTableViewHeader.swift; sourceTree = "<group>"; };
+		AE75C25E2C09C8B2008E5B29 /* RecipeSear.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecipeSear.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE75C2612C09C8B2008E5B29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AE75C2632C09C8B2008E5B29 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AE75C2652C09C8B2008E5B29 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AE75C2682C09C8B2008E5B29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AE75C26B2C09C8B2008E5B29 /* RecipeSear.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RecipeSear.xcdatamodel; sourceTree = "<group>"; };
+		AE75C26D2C09C8B3008E5B29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AE75C2702C09C8B3008E5B29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AE75C2722C09C8B3008E5B29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE75C27B2C09C9E6008E5B29 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		AE75C2812C0AE816008E5B29 /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
+		AE75C2832C0AFA8C008E5B29 /* MyPickCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPickCell.swift; sourceTree = "<group>"; };
+		AE75C2852C0AFC18008E5B29 /* RecentlyPickCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentlyPickCell.swift; sourceTree = "<group>"; };
+		AE75C2892C0B0FFF008E5B29 /* MyPickCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPickCollectionCell.swift; sourceTree = "<group>"; };
+		AE75C28B2C0B3763008E5B29 /* SearchBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarViewController.swift; sourceTree = "<group>"; };
+		AE75C28D2C0C4148008E5B29 /* SearchRecipeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRecipeCell.swift; sourceTree = "<group>"; };
+		AEFA08F22C0EE0E400E0C87D /* FoodInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodInfoViewController.swift; sourceTree = "<group>"; };
+		AEFA08F82C0F038B00E0C87D /* FoodTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTableViewCell.swift; sourceTree = "<group>"; };
+		CD662AB311765E4DEA9680B8 /* Pods_RecipeSear.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RecipeSear.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE75C25B2C09C8B2008E5B29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B417E22D13C625C37878C62 /* Pods_RecipeSear.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13D91457156B6B56FA6F8DA8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				02F4775DBC412B3B9E2DDCCE /* Pods-RecipeSear.debug.xcconfig */,
+				53D4E654C69A60EBAD57B420 /* Pods-RecipeSear.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AE2D67EB2C0D91E100BD7CE4 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				AE2D67EC2C0D920500BD7CE4 /* NetworkManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		AE75C2552C09C8B2008E5B29 = {
+			isa = PBXGroup;
+			children = (
+				AE75C2602C09C8B2008E5B29 /* RecipeSear */,
+				AE75C25F2C09C8B2008E5B29 /* Products */,
+				13D91457156B6B56FA6F8DA8 /* Pods */,
+				F9603CF3AC133D111C36C5CA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AE75C25F2C09C8B2008E5B29 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE75C25E2C09C8B2008E5B29 /* RecipeSear.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE75C2602C09C8B2008E5B29 /* RecipeSear */ = {
+			isa = PBXGroup;
+			children = (
+				AE75C2612C09C8B2008E5B29 /* AppDelegate.swift */,
+				AE75C2632C09C8B2008E5B29 /* SceneDelegate.swift */,
+				AE2D67EB2C0D91E100BD7CE4 /* Networking */,
+				AE75C27A2C09C9B5008E5B29 /* Models */,
+				AE75C2792C09C996008E5B29 /* Views */,
+				AE75C2782C09C98B008E5B29 /* Controller */,
+				AE75C26D2C09C8B3008E5B29 /* Assets.xcassets */,
+				AE75C26F2C09C8B3008E5B29 /* LaunchScreen.storyboard */,
+				AE75C2722C09C8B3008E5B29 /* Info.plist */,
+				AE75C26A2C09C8B2008E5B29 /* RecipeSear.xcdatamodeld */,
+			);
+			path = RecipeSear;
+			sourceTree = "<group>";
+		};
+		AE75C2782C09C98B008E5B29 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AE75C2652C09C8B2008E5B29 /* ViewController.swift */,
+				AE75C27B2C09C9E6008E5B29 /* SecondViewController.swift */,
+				AE75C28B2C0B3763008E5B29 /* SearchBarViewController.swift */,
+				AEFA08F22C0EE0E400E0C87D /* FoodInfoViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AE75C2792C09C996008E5B29 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AE75C2672C09C8B2008E5B29 /* Main.storyboard */,
+				AE75C2812C0AE816008E5B29 /* MyTableViewCell.swift */,
+				AE75C2832C0AFA8C008E5B29 /* MyPickCell.swift */,
+				AE75C2852C0AFC18008E5B29 /* RecentlyPickCell.swift */,
+				AE75C2892C0B0FFF008E5B29 /* MyPickCollectionCell.swift */,
+				AE75C28D2C0C4148008E5B29 /* SearchRecipeCell.swift */,
+				AEFA08F82C0F038B00E0C87D /* FoodTableViewCell.swift */,
+				AE6AFD222C158E2300234BEA /* FoodTableViewHeader.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AE75C27A2C09C9B5008E5B29 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AE2D67E92C0D912300BD7CE4 /* Recipe.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F9603CF3AC133D111C36C5CA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD662AB311765E4DEA9680B8 /* Pods_RecipeSear.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE75C25D2C09C8B2008E5B29 /* RecipeSear */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE75C2752C09C8B3008E5B29 /* Build configuration list for PBXNativeTarget "RecipeSear" */;
+			buildPhases = (
+				5CA6D34F08CDBF6FE7189407 /* [CP] Check Pods Manifest.lock */,
+				AE75C25A2C09C8B2008E5B29 /* Sources */,
+				AE75C25B2C09C8B2008E5B29 /* Frameworks */,
+				AE75C25C2C09C8B2008E5B29 /* Resources */,
+				39FE5A40C62A26F0F0A216B8 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RecipeSear;
+			productName = RecipeSear;
+			productReference = AE75C25E2C09C8B2008E5B29 /* RecipeSear.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE75C2562C09C8B2008E5B29 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					AE75C25D2C09C8B2008E5B29 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = AE75C2592C09C8B2008E5B29 /* Build configuration list for PBXProject "RecipeSear" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AE75C2552C09C8B2008E5B29;
+			productRefGroup = AE75C25F2C09C8B2008E5B29 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE75C25D2C09C8B2008E5B29 /* RecipeSear */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE75C25C2C09C8B2008E5B29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE75C2712C09C8B3008E5B29 /* LaunchScreen.storyboard in Resources */,
+				AE75C26E2C09C8B3008E5B29 /* Assets.xcassets in Resources */,
+				AE75C2692C09C8B2008E5B29 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		39FE5A40C62A26F0F0A216B8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RecipeSear/Pods-RecipeSear-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RecipeSear/Pods-RecipeSear-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RecipeSear/Pods-RecipeSear-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5CA6D34F08CDBF6FE7189407 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RecipeSear-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE75C25A2C09C8B2008E5B29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE75C2662C09C8B2008E5B29 /* ViewController.swift in Sources */,
+				AE75C2622C09C8B2008E5B29 /* AppDelegate.swift in Sources */,
+				AEFA08F92C0F038B00E0C87D /* FoodTableViewCell.swift in Sources */,
+				AEFA08F32C0EE0E400E0C87D /* FoodInfoViewController.swift in Sources */,
+				AE75C26C2C09C8B2008E5B29 /* RecipeSear.xcdatamodeld in Sources */,
+				AE2D67ED2C0D920500BD7CE4 /* NetworkManager.swift in Sources */,
+				AE2D67EA2C0D912300BD7CE4 /* Recipe.swift in Sources */,
+				AE75C2842C0AFA8C008E5B29 /* MyPickCell.swift in Sources */,
+				AE6AFD232C158E2300234BEA /* FoodTableViewHeader.swift in Sources */,
+				AE75C27C2C09C9E6008E5B29 /* SecondViewController.swift in Sources */,
+				AE75C2642C09C8B2008E5B29 /* SceneDelegate.swift in Sources */,
+				AE75C28C2C0B3763008E5B29 /* SearchBarViewController.swift in Sources */,
+				AE75C28E2C0C4148008E5B29 /* SearchRecipeCell.swift in Sources */,
+				AE75C2862C0AFC18008E5B29 /* RecentlyPickCell.swift in Sources */,
+				AE75C28A2C0B0FFF008E5B29 /* MyPickCollectionCell.swift in Sources */,
+				AE75C2822C0AE816008E5B29 /* MyTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AE75C2672C09C8B2008E5B29 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE75C2682C09C8B2008E5B29 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AE75C26F2C09C8B3008E5B29 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE75C2702C09C8B3008E5B29 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AE75C2732C09C8B3008E5B29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AE75C2742C09C8B3008E5B29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AE75C2762C09C8B3008E5B29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02F4775DBC412B3B9E2DDCCE /* Pods-RecipeSear.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W5SLC8L5FS;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RecipeSear/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Eren.RecipeSear;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		AE75C2772C09C8B3008E5B29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53D4E654C69A60EBAD57B420 /* Pods-RecipeSear.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W5SLC8L5FS;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RecipeSear/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Eren.RecipeSear;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE75C2592C09C8B2008E5B29 /* Build configuration list for PBXProject "RecipeSear" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE75C2732C09C8B3008E5B29 /* Debug */,
+				AE75C2742C09C8B3008E5B29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE75C2752C09C8B3008E5B29 /* Build configuration list for PBXNativeTarget "RecipeSear" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE75C2762C09C8B3008E5B29 /* Debug */,
+				AE75C2772C09C8B3008E5B29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AE75C26A2C09C8B2008E5B29 /* RecipeSear.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AE75C26B2C09C8B2008E5B29 /* RecipeSear.xcdatamodel */,
+			);
+			currentVersion = AE75C26B2C09C8B2008E5B29 /* RecipeSear.xcdatamodel */;
+			path = RecipeSear.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AE75C2562C09C8B2008E5B29 /* Project object */;
+}
